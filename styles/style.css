@@ -2,7 +2,7 @@
 
 .page {
   color: var(--description-color);
-  font-family: var(--main-font, "IBM Plex mono", sans-serif);
+  font-family: var(--main-font, "IBM Plex mono", monospace);
   font-size: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
   line-height: 23.4px;
   background-color: var(--bg-color);
@@ -96,6 +96,7 @@
   line-height: 21px;
   text-transform: lowercase;
   background-color: transparent;
+  transition: 0.5s;
   cursor: pointer;
 }
 
@@ -140,7 +141,7 @@
   background-color: var(--accent-color);
 }
 
-.title-decor h3 {
+.title-decor p {
   font-size: inherit;
   line-height: inherit;
 }
@@ -180,6 +181,7 @@
   border: 1px solid transparent;
   text-decoration: none;
   text-shadow: 2px 1px 0 var(--accent-color);
+  transition: 0.5s;
 }
 
 .main__section-info-card-text-link:hover {
@@ -233,7 +235,7 @@
   text-shadow: 2px 2px 0 var(--accent-color);
 }
 
-@media screen and (min-width: 610px) {
+@media screen and (width >=610px) {
   .img-section {
     gap: 20px;
   }
@@ -273,7 +275,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (width >=768px) {
   .header {
     padding: 100px 20px;
   }
@@ -326,7 +328,7 @@
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (width >=1024px) {
   .header {
     padding: 20px;
   }
